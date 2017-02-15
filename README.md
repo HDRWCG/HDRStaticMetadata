@@ -1,7 +1,7 @@
 # HDRStaticMetadata
 
  HDR GENERATOR TOOL
- In its essence, this tool will calculate the maxFall and maxCLL of a 16-bit TIFF frame using the formula 'PQ10000_f' (defined by Bill Mandel). This application will scan a folder of
+ In its essence, this tool will calculate the maxFall and maxCLL of a 16-bit TIFF frame using the formula 'PQ10000_f' (to linearize). This application will scan a folder of
  TIFF files and proceed to perform calculations on the files. File results are calculated concurrently according to the number of threads a user specifies. The
  results are logged to a file. The files processed and the time the files were processed are logged as well. OpenImageIO is used to read the files into a 16bit vector.
  OpenCV is used for conveniently accessing pixels as well as croping an image for frame average light level calculations. QtCore and QtConcurrent are used for 
